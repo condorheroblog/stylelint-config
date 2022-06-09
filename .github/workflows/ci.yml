@@ -1,0 +1,32 @@
+# https://github.com/unjs/node-fetch-native/blob/main/.github/workflows/ci.yml
+
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  ci:
+    name: Lint and test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: corepack enable
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: pnpm
+
+      - name: Install ni
+        run: npm i -g @antfu/ni
+
+      - run: ni --frozen -r
+      - run: nr lint
+      - run: nr test
