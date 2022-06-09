@@ -29,8 +29,8 @@
   "devDependencies": {
     "@condorhero/eslint-config-basic": "^0.1.5",
     "bumpp": "^7.1.1",
-    "eslint": "^8.16.0",
-    "husky": "^8.0.0",
+    "eslint": "^8.17.0",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.1"
   }
 }
