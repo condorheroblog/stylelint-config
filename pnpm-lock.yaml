@@ -9,12 +9,14 @@ importers:
       eslint: ^8.17.0
       husky: ^8.0.1
       lint-staged: ^13.0.1
+      vitest: ^0.14.1
     devDependencies:
       '@condorhero/eslint-config-basic': registry.npmmirror.com/@condorhero/eslint-config-basic/0.1.5_eslint@8.17.0
       bumpp: registry.npmmirror.com/bumpp/7.1.1
       eslint: registry.npmmirror.com/eslint/8.17.0
       husky: registry.npmmirror.com/husky/8.0.1
       lint-staged: registry.npmmirror.com/lint-staged/13.0.1
+      vitest: registry.npmmirror.com/vitest/0.14.1
 
   packages/css:
     specifiers:
@@ -23,7 +25,6 @@ importers:
       stylelint: ^14.9.0
       stylelint-config-recess-order: ^3.0.0
       stylelint-config-standard: ^26.0.0
-      vitest: ^0.14.1
     dependencies:
       postcss-html: registry.npmmirror.com/postcss-html/1.4.1
       postcss-markdown: registry.npmmirror.com/postcss-markdown/1.2.0
@@ -31,7 +32,6 @@ importers:
       stylelint-config-standard: registry.npmmirror.com/stylelint-config-standard/26.0.0_stylelint@14.9.0
     devDependencies:
       stylelint: registry.npmmirror.com/stylelint/14.9.0
-      vitest: registry.npmmirror.com/vitest/0.14.1
 
   packages/sass:
     specifiers:

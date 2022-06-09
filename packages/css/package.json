@@ -1,0 +1,46 @@
+{
+  "name": "@condorhero/stylelint-config-css",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.1.6",
+  "description": "My Stylelint CSS config presets",
+  "keywords": [
+    "eslint",
+    "Stylelint-config-css",
+    "Stylelint-config-preset"
+  ],
+  "license": "MIT",
+  "author": "CondorHero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/stylelint-config.git",
+    "directory": "packages/css"
+  },
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "stylelint:fix": "stylelint **/*.{css,html,md} --fix --config=index.js",
+    "stylelint": "stylelint **/*.{css,html,md} --config=index.js"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/condorheroblog/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "postcss-html": "^1.4.1",
+    "postcss-markdown": "^1.2.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^26.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.0"
+  }
+}
