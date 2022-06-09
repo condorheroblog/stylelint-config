@@ -1,0 +1,33 @@
+{
+  "name": "@condorhero/stylelint-config-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@7.1.6",
+  "description": "My Stylelint config presets",
+  "keywords": [
+    "eslint",
+    "stylelint-config",
+    "stylelint-config-preset"
+  ],
+  "license": "MIT",
+  "author": "CondorHero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/stylelint-config.git"
+  },
+  "scripts": {
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish",
+    "preinstall": "npx only-allow pnpm",
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint ."
+  },
+  "bugs": {
+    "url": "https://github.com/condorheroblog/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
+  "devDependencies": {
+    "@condorhero/eslint-config-basic": "^0.1.5",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.16.0"
+  }
+}
