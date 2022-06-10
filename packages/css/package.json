@@ -20,8 +20,8 @@
     "*.js"
   ],
   "scripts": {
-    "stylelint:fix": "stylelint **/*.{css,html,md} --fix --config=index.js",
-    "stylelint": "stylelint **/*.{css,html,md} --config=index.js"
+    "stylelint:fix": "stylelint . --fix --config=index.js",
+    "stylelint": "stylelint . --config=index.js"
   },
   "peerDependencies": {
     "stylelint": ">=14.9.0"
