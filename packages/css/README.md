@@ -38,7 +38,7 @@ pnpm add -D eslint @condorhero/stylelint-config-css
 }
 ```
 
-> You don't need `.stylelintignore` normally as it has been provided by the preset.
+> You don't need `.stylelintignore` normally as it has been provided by the preset.If the project needs cannot be met, the lint suffix can be added => `stylelint **/*.{css,html,xml,md}`
 
 ### Add script for package.json
 
@@ -47,8 +47,8 @@ For example:
 ```json
 {
   "scripts": {
-    "stylelint": "stylelint **/*.{css,html,md}",
-    "stylelint:fix": "stylelint **/*.{css,html,md} --fix"
+    "stylelint": "stylelint .",
+    "stylelint:fix": "stylelint . --fix"
   }
 }
 ```
