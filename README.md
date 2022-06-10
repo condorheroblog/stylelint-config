@@ -28,10 +28,14 @@
 
 ### @condorhero/stylelint-config-css
 
-- [@condorhero/stylelint-config-css](./packages/css/readme.md)
+- [@condorhero/stylelint-config-css](./packages/css/README.md)
 ## Contribution Guide
 
 Hey there! We are really excited that you are interested in contributing. This is a general contribution guide. Before submitting your contribution, please make sure to take a moment and read through the following guide:
+
+### PackageManager
+
+- latest [pnpm](https://pnpm.io/)
 
 ### Update Dependencies
 
@@ -110,6 +114,9 @@ Run as if pnpm was started in the root of the [workspace](https://pnpm.io/worksp
 <br />
 </details>
 
+
+### Commit Convention
+We use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages, which allows the changelog to be auto-generated based on the commits. Please read the guide through if you aren't familiar with it already.
 ## License
 
 [MIT](https://github.com/condorheroblog/stylelint-config/blob/main/LICENSE)

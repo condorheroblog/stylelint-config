@@ -6,11 +6,11 @@
 
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config" target="__blank">
-        <img src="https://img.shields.io/npm/v/@condorhero/stylelint-config?color=a1b858&label=" alt="NPM version">
+    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config-css" target="__blank">
+        <img src="https://img.shields.io/npm/v/@condorhero/stylelint-config-css?color=a1b858&label=" alt="NPM version">
     </a>
-    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config" target="__blank">
-        <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@condorhero/stylelint-config?color=50a36f&label=">
+    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config-css" target="__blank">
+        <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@condorhero/stylelint-config-css?color=50a36f&label=">
     </a>
     <br />
 </p>
@@ -80,13 +80,17 @@ Create `.vscode/settings.json`
 
 Hey there! We are really excited that you are interested in contributing. This is a general contribution guide. Before submitting your contribution, please make sure to take a moment and read through the following guide:
 
+### PackageManager
+
+- latest [pnpm](https://pnpm.io/)
+
 ### Update Dependencies
 
 Keeping dependencies up-to-date is one of the important aspects to keep projects alive and getting latest bug fixes on time. We recommend to update dependencies in weekly or bi-weekly intervals.
 
-We use `[taze](https://github.com/antfu/taze)` to update the dependencies manually most of the time. As deps updating bots like Dependabot or Renovate could be a bit annoying when you have a lot projects.
+We use [taze](https://github.com/antfu/taze) to update the dependencies manually most of the time. As deps updating bots like Dependabot or Renovate could be a bit annoying when you have a lot projects.
 
-With `[taze](https://github.com/antfu/taze)`, you can run `[taze](https://github.com/antfu/taze)` major -Ir to check and select the versions to update interactive. -I stands for --interactive, -r stands for --recursive for monorepo.
+With [taze](https://github.com/antfu/taze), you can run [taze](https://github.com/antfu/taze) major -Ir to check and select the versions to update interactive. -I stands for --interactive, -r stands for --recursive for monorepo.
 
 **I usually use:**
 
@@ -157,6 +161,9 @@ Run as if pnpm was started in the root of the [workspace](https://pnpm.io/worksp
 <br />
 </details>
 
+
+### Commit Convention
+We use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages, which allows the changelog to be auto-generated based on the commits. Please read the guide through if you aren't familiar with it already.
 ## License
 
 [MIT](https://github.com/condorheroblog/stylelint-config/blob/main/LICENSE)
