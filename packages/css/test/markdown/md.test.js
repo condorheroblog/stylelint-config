@@ -3,7 +3,8 @@ import stylelint from "stylelint";
 import postcssMarkdown from "postcss-markdown";
 import { beforeEach, describe, expect, test } from "vitest";
 
-import config from "../..";
+import basicConfig from "../../";
+const config = { ...basicConfig, ignoreFiles: [] };
 
 const validMarkdown = join(__dirname, "./valid.md");
 const invalidMarkdown = join(__dirname, "./invalid.md");

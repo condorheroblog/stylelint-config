@@ -3,7 +3,8 @@ import { join } from "path";
 import stylelint from "stylelint";
 import { beforeEach, describe, expect, test } from "vitest";
 
-import config from "../../";
+import basicConfig from "../../";
+const config = { ...basicConfig, ignoreFiles: [] };
 
 const validCss = fs.readFileSync(join(__dirname, "./valid.css"), "utf-8");
 const invalidCss = fs.readFileSync(join(__dirname, "./invalid.css"), "utf-8");

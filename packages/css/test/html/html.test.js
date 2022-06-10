@@ -3,7 +3,8 @@ import stylelint from "stylelint";
 import postcssHtml from "postcss-html";
 import { beforeEach, describe, expect, test } from "vitest";
 
-import config from "../..";
+import basicConfig from "../../";
+const config = { ...basicConfig, ignoreFiles: [] };
 
 const validHtmlPath = join(__dirname, "./valid.html");
 const invalidHtmlPath = join(__dirname, "./invalid.html");
