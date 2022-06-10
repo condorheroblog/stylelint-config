@@ -1,1 +1,1 @@
-"./**/*.{ts,html,json}": "npm run lint:fix"
+"./**/*.{ts,html,json,js}": "npm run lint:fix"
