@@ -1,0 +1,561 @@
+// Vitest Snapshot v1
+
+exports[`BEM pieces to be tested > invalid.css 1`] = `
+"/* stylelint-disable max-line-length */
+
+/* @see: https://gist.githubusercontent.com/Potherca/f2a65491e63338659c3a0d2b07eee382/raw/ca9c9165219c9cb7f7aacf0c4423ef5ac07559da/test.fail */
+/* stylelint-enable max-line-length */
+
+/*
+\\\\/******************************************************************************\\\\
+|*                          These SHOULD NOT be matched                        *|
+\\\\******************************************************************************\\\\/
+*/
+
+/** @define utilities */
+
+.util-sizeFill {
+  height: 20px;
+}
+
+.util-sm-horse {
+  height: 20px;
+}
+
+/* Invalid class names, cannot start with a digit */
+
+/* Invalid class names , cannot start with a digit, two hyphens, a hyphen followed by a digit or capital letter. */
+.0ne {
+  height: 20px;
+}
+
+.-0ne {
+  height: 20px;
+}
+
+.--one {
+  height: 20px;
+}
+
+.Adblock {
+  height: 20px;
+}
+
+/* Classes with underscore */
+.one_two {
+  height: 20px;
+}
+
+.one_two_three_in_fi_ni_ty {
+  height: 20px;
+}
+
+/* Mixed dash and underscore */
+.one-two_three {
+  height: 20px;
+}
+
+.one_two-three {
+  height: 20px;
+}
+
+/* Double BEM item */
+.block__element__element {
+  height: 20px;
+}
+
+.block__element__element--modifier--modifier--modifier {
+  height: 20px;
+}
+
+/* Leading dash */
+.-block {
+  height: 20px;
+}
+
+.-other-block__element {
+  height: 20px;
+}
+
+/* Leading double dash */
+.--block {
+  height: 20px;
+}
+
+.--other-block {
+  height: 20px;
+}
+
+/* Trailing dash */
+.block- {
+  height: 20px;
+}
+
+.other-block- {
+  height: 20px;
+}
+
+.block__element- {
+  height: 20px;
+}
+
+/* Trailing double dash */
+.block-- {
+  height: 20px;
+}
+
+.other-block-- {
+  height: 20px;
+}
+
+.block__element-- {
+  height: 20px;
+}
+
+/* Leading underscore */
+._block {
+  height: 20px;
+}
+
+._other-block {
+  height: 20px;
+}
+
+._block__element {
+  height: 20px;
+}
+
+/* Leading double underscore */
+.__block {
+  height: 20px;
+}
+
+.__other-block {
+  height: 20px;
+}
+
+.__block__element {
+  height: 20px;
+}
+
+/* Trailing underscore */
+.block_ {
+  height: 20px;
+}
+
+.other-block_ {
+  height: 20px;
+}
+
+.block__element_ {
+  height: 20px;
+}
+
+/* Trailing double underscore */
+.block__ {
+  height: 20px;
+}
+
+.other-block__ {
+  height: 20px;
+}
+
+.block__element__ {
+  height: 20px;
+}
+
+/* Wrong order */
+.block--modifier__element {
+  height: 20px;
+}
+
+.block--modifier--modifier__element {
+  height: 20px;
+}
+
+/* Mixed dash and underscore in BEM separator */
+.block-__element {
+  height: 20px;
+}
+
+.other-block-__element {
+  height: 20px;
+}
+
+.block-__other-element {
+  height: 20px;
+}
+"
+`;
+
+exports[`BEM pieces to be tested > valid.css 1`] = `
+"/* stylelint-disable max-line-length */
+
+/* @see: https://gist.githubusercontent.com/Potherca/f2a65491e63338659c3a0d2b07eee382/raw/ca9c9165219c9cb7f7aacf0c4423ef5ac07559da/test.pass */
+/* stylelint-enable max-line-length */
+
+/*
+\\\\/******************************************************************************\\\\
+|*                          These SHOULD be matched                           *|
+\\\\******************************************************************************\\\\/
+*/
+
+/* A normal class */
+.one {
+  color: red;
+}
+
+.a {
+  color: red;
+}
+
+/* Classes with dash */
+.a-b {
+  color: red;
+}
+
+.one-two {
+  color: red;
+}
+
+.one-two-three {
+  color: red;
+}
+
+.one-two-three-four {
+  color: red;
+}
+
+.one-two-three-i-n-f-i-n-i-t-y {
+  color: red;
+}
+
+/* BEM (Block Element Modifier) classes */
+
+/* Block Only */
+.block {
+  color: red;
+}
+
+.other-block {
+  color: red;
+}
+
+/* Block + Element */
+.a__b {
+  color: red;
+}
+
+.a-b__element {
+  color: red;
+}
+
+.a-b__c-d {
+  color: red;
+}
+
+.block__element {
+  color: red;
+}
+
+.other-block__element {
+  color: red;
+}
+
+.block__other-element {
+  color: red;
+}
+
+.other-block__other-element {
+  color: red;
+}
+
+/* Block + Modifier */
+.a--b {
+  color: red;
+}
+
+.a-b--c {
+  color: red;
+}
+
+.a--b-c {
+  color: red;
+}
+
+.a-b--c-d {
+  color: red;
+}
+
+.block--modifier {
+  color: red;
+}
+
+.other-block--modifier {
+  color: red;
+}
+
+.block--other-modifier {
+  color: red;
+}
+
+.other-block--other-modifier {
+  color: red;
+}
+
+/* Block + Modifier Name + Modifier Value */
+.a--b--c {
+  color: red;
+}
+
+.a-b--c--d {
+  color: red;
+}
+
+.a--b-c--d {
+  color: red;
+}
+
+.a--b--c-d {
+  color: red;
+}
+
+.a-b--c--d-e {
+  color: red;
+}
+
+.a-b--c-d--e {
+  color: red;
+}
+
+.a--b-c--d-e {
+  color: red;
+}
+
+.block--modifier--value {
+  color: red;
+}
+
+.block--modifier--other-value {
+  color: red;
+}
+
+.other-block--modifier--value {
+  color: red;
+}
+
+.other-block--modifier--other-value {
+  color: red;
+}
+
+.block--other-modifier--value {
+  color: red;
+}
+
+.block--other-modifier--other-value {
+  color: red;
+}
+
+.other-block--other-modifier--value {
+  color: red;
+}
+
+.other-block--other-modifier--other-value {
+  color: red;
+}
+
+/* Block + Element + Modifier */
+.a__b--c {
+  color: red;
+}
+
+.a__b--c-d {
+  color: red;
+}
+
+.a__b-c--d {
+  color: red;
+}
+
+.a__b-c--d-e {
+  color: red;
+}
+
+.a-b__c--d {
+  color: red;
+}
+
+.a-b__c--d-e {
+  color: red;
+}
+
+.a-b__d-e--f {
+  color: red;
+}
+
+.a-b__d-e--f-g {
+  color: red;
+}
+
+.block__element--modifier {
+  color: red;
+}
+
+.block__element--other-modifier {
+  color: red;
+}
+
+.block__other-element--modifier {
+  color: red;
+}
+
+.block__other-element--other-modifier {
+  color: red;
+}
+
+.other-block__element--modifier {
+  color: red;
+}
+
+.other-block__element--other-modifier {
+  color: red;
+}
+
+.other-block__other-element--modifier {
+  color: red;
+}
+
+.other-block__other-element--other-modifier {
+  color: red;
+}
+
+/* Block + Element + Modifier Name + Modifier Value */
+.a__b--c--d {
+  color: red;
+}
+
+.a__b--c--d-e {
+  color: red;
+}
+
+.a__b--c-d--e {
+  color: red;
+}
+
+.a__b--c-d--e-f {
+  color: red;
+}
+
+.a__b-c--d--e {
+  color: red;
+}
+
+.a__b-c--d--e-f {
+  color: red;
+}
+
+.a__b-c--d-e--f {
+  color: red;
+}
+
+.a__b-c--d-e--f-g {
+  color: red;
+}
+
+.a-b__c--d--e {
+  color: red;
+}
+
+.a-b__c--d--e-f {
+  color: red;
+}
+
+.a-b__c--d-e--f {
+  color: red;
+}
+
+.a-b__c--d-e--f-g {
+  color: red;
+}
+
+.a-b__d-e--f--g {
+  color: red;
+}
+
+.a-b__d-e--f--g-h {
+  color: red;
+}
+
+.a-b__d-e--f-g--h {
+  color: red;
+}
+
+.a-b__d-e--f-g--h-i {
+  color: red;
+}
+
+.block__element--modifier--value {
+  color: red;
+}
+
+.block__element--modifier--other-value {
+  color: red;
+}
+
+.block__element--other-modifier--value {
+  color: red;
+}
+
+.block__element--other-modifier--other-value {
+  color: red;
+}
+
+.block__other-element--modifier--value {
+  color: red;
+}
+
+.block__other-element--modifier--other-value {
+  color: red;
+}
+
+.block__other-element--other-modifier--value {
+  color: red;
+}
+
+.block__other-element--other-modifier--other-value {
+  color: red;
+}
+
+.other-block__element--modifier--value {
+  color: red;
+}
+
+.other-block__element--modifier--other-value {
+  color: red;
+}
+
+.other-block__element--other-modifier--value {
+  color: red;
+}
+
+.other-block__element--other-modifier--other-value {
+  color: red;
+}
+
+.other-block__other-element--modifier--value {
+  color: red;
+}
+
+.other-block__other-element--modifier--other-value {
+  color: red;
+}
+
+.other-block__other-element--other-modifier--value {
+  color: red;
+}
+
+.other-block__other-element--other-modifier--other-value {
+  color: red;
+}
+"
+`;

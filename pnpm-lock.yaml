@@ -25,11 +25,13 @@ importers:
       stylelint: ^14.9.0
       stylelint-config-recess-order: ^3.0.0
       stylelint-config-standard: ^26.0.0
+      stylelint-selector-bem-pattern: ^2.1.1
     dependencies:
       postcss-html: registry.npmmirror.com/postcss-html/1.4.1
       postcss-markdown: registry.npmmirror.com/postcss-markdown/1.2.0
       stylelint-config-recess-order: registry.npmmirror.com/stylelint-config-recess-order/3.0.0_stylelint@14.9.1
       stylelint-config-standard: registry.npmmirror.com/stylelint-config-standard/26.0.0_stylelint@14.9.1
+      stylelint-selector-bem-pattern: registry.npmmirror.com/stylelint-selector-bem-pattern/2.1.1
     devDependencies:
       stylelint: registry.npmmirror.com/stylelint/14.9.1
 
@@ -2759,7 +2761,6 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
 
   registry.npmmirror.com/log-update/4.0.0:
     resolution: {integrity: sha512-9fkkDevMefjg0mmzWFBW8YkFP91OrizzkW3diF7CpG+S2EYdy4+TVfGwz1zeF8x7hCx1ovSPTOE9Ngib74qqUg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/log-update/-/log-update-4.0.0.tgz}
@@ -3217,6 +3218,12 @@ packages:
     version: 1.1.1
     dev: true
 
+  registry.npmmirror.com/picocolors/0.2.1:
+    resolution: {integrity: sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-0.2.1.tgz}
+    name: picocolors
+    version: 0.2.1
+    dev: false
+
   registry.npmmirror.com/picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
     name: picocolors
@@ -3242,6 +3249,16 @@ packages:
     version: 8.0.0
     engines: {node: '>=4'}
     dev: true
+
+  registry.npmmirror.com/postcss-bem-linter/3.3.0:
+    resolution: {integrity: sha512-qfgbgf6JmSpJEdglPOsx6GXkQg+dyHRGkflFoACZYL1dVFqoN5O3KhynuCvZFZ1DVfCFCuqEFgnwn8AyN+4qeQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-bem-linter/-/postcss-bem-linter-3.3.0.tgz}
+    name: postcss-bem-linter
+    version: 3.3.0
+    dependencies:
+      minimatch: registry.npmmirror.com/minimatch/3.1.2
+      postcss: registry.npmmirror.com/postcss/7.0.39
+      postcss-resolve-nested-selector: registry.npmmirror.com/postcss-resolve-nested-selector/0.1.1
+    dev: false
 
   registry.npmmirror.com/postcss-html/1.4.1:
     resolution: {integrity: sha512-OKihuWxPuBQrQeLNsavP7ytJ9IYNj/ViAXB2v7Qjh56LnfESKrkahKA9si4VfPN8xtz6oqUE6KdL0bTPrHJr6g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-html/-/postcss-html-1.4.1.tgz}
@@ -3338,6 +3355,16 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz}
     name: postcss-value-parser
     version: 4.2.0
+
+  registry.npmmirror.com/postcss/7.0.39:
+    resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-7.0.39.tgz}
+    name: postcss
+    version: 7.0.39
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      picocolors: registry.npmmirror.com/picocolors/0.2.1
+      source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: false
 
   registry.npmmirror.com/postcss/8.4.14:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.14.tgz}
@@ -3637,6 +3664,13 @@ packages:
     version: 1.0.2
     engines: {node: '>=0.10.0'}
 
+  registry.npmmirror.com/source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz}
+    name: source-map
+    version: 0.6.1
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   registry.npmmirror.com/spdx-correct/3.1.1:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/spdx-correct/-/spdx-correct-3.1.1.tgz}
     name: spdx-correct
@@ -3808,6 +3842,19 @@ packages:
       postcss: registry.npmmirror.com/postcss/8.4.14
       postcss-sorting: registry.npmmirror.com/postcss-sorting/7.0.1_postcss@8.4.14
       stylelint: registry.npmmirror.com/stylelint/14.9.1
+    dev: false
+
+  registry.npmmirror.com/stylelint-selector-bem-pattern/2.1.1:
+    resolution: {integrity: sha512-zLaK/aMwUqLxR86CpFNsfelwCTdDw3kdtWbtAKEch6bpOQvYvKmFFfvMRCGjeKwylWgTRRrZA11okZw5WK0IOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/stylelint-selector-bem-pattern/-/stylelint-selector-bem-pattern-2.1.1.tgz}
+    name: stylelint-selector-bem-pattern
+    version: 2.1.1
+    dependencies:
+      lodash: registry.npmmirror.com/lodash/4.17.21
+      postcss: registry.npmmirror.com/postcss/8.4.14
+      postcss-bem-linter: registry.npmmirror.com/postcss-bem-linter/3.3.0
+      stylelint: registry.npmmirror.com/stylelint/14.9.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.npmmirror.com/stylelint/14.9.1:

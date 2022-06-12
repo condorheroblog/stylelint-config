@@ -20,7 +20,7 @@
     "*.js"
   ],
   "scripts": {
-    "stylelint:fix": "stylelint . --fix --config=index.js",
+    "stylelint:fix": "stylelint ./test/bem/invalidBem.css --fix --config=index.js",
     "stylelint": "stylelint . --config=index.js"
   },
   "peerDependencies": {
@@ -38,7 +38,8 @@
     "postcss-html": "^1.4.1",
     "postcss-markdown": "^1.2.0",
     "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-standard": "^26.0.0"
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   },
   "devDependencies": {
     "stylelint": "^14.9.0"

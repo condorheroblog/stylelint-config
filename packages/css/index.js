@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    "stylelint-selector-bem-pattern",
+  ],
   extends: ["stylelint-config-standard", "stylelint-config-recess-order"],
   overrides: [
     {
@@ -10,6 +13,22 @@ module.exports = {
       customSyntax: "postcss-markdown",
     },
   ],
+  rules: {
+    "plugin/selector-bem-pattern": {
+      preset: "bem",
+      utilitySelectors: /^\.[util|u]-[a-z]+$/,
+      ignoreSelectors: "\\b(svg|path)\\b",
+    },
+    "selector-class-pattern": [
+      "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+      {
+        // TODO: custom formatters(https://stylelint.io/developer-guide/formatters/)
+        // message(prop, value) {
+        //   return "https://github.com/AndyOGo/stylelint-declaration-strict-value/issues/142";
+        // },
+      },
+    ],
+  },
   ignoreFiles: [
     // https://github.com/stylelint/stylelint/blob/2015d0d74d/lib/standalone.js#L23
     // "**/node_modules/**",
@@ -39,5 +58,4 @@ module.exports = {
     "**/*.ts",
     "**/*.json",
   ],
-
 };

@@ -1,0 +1,184 @@
+/* stylelint-disable max-line-length */
+
+/* @see: https://gist.githubusercontent.com/Potherca/f2a65491e63338659c3a0d2b07eee382/raw/ca9c9165219c9cb7f7aacf0c4423ef5ac07559da/test.fail */
+/* stylelint-enable max-line-length */
+
+/*
+\/******************************************************************************\
+|*                          These SHOULD NOT be matched                        *|
+\******************************************************************************\/
+*/
+
+/** @define utilities */
+
+.util-sizeFill {
+  height: 20px;
+}
+
+.util-sm-horse {
+  height: 20px;
+}
+
+/* Invalid class names, cannot start with a digit */
+
+/* Invalid class names , cannot start with a digit, two hyphens, a hyphen followed by a digit or capital letter. */
+.0ne {
+  height: 20px;
+}
+
+.-0ne {
+  height: 20px;
+}
+
+.--one {
+  height: 20px;
+}
+
+.Adblock {
+  height: 20px;
+}
+
+/* Classes with underscore */
+.one_two {
+  height: 20px;
+}
+
+.one_two_three_in_fi_ni_ty {
+  height: 20px;
+}
+
+/* Mixed dash and underscore */
+.one-two_three {
+  height: 20px;
+}
+
+.one_two-three {
+  height: 20px;
+}
+
+/* Double BEM item */
+.block__element__element {
+  height: 20px;
+}
+
+.block__element__element--modifier--modifier--modifier {
+  height: 20px;
+}
+
+/* Leading dash */
+.-block {
+  height: 20px;
+}
+
+.-other-block__element {
+  height: 20px;
+}
+
+/* Leading double dash */
+.--block {
+  height: 20px;
+}
+
+.--other-block {
+  height: 20px;
+}
+
+/* Trailing dash */
+.block- {
+  height: 20px;
+}
+
+.other-block- {
+  height: 20px;
+}
+
+.block__element- {
+  height: 20px;
+}
+
+/* Trailing double dash */
+.block-- {
+  height: 20px;
+}
+
+.other-block-- {
+  height: 20px;
+}
+
+.block__element-- {
+  height: 20px;
+}
+
+/* Leading underscore */
+._block {
+  height: 20px;
+}
+
+._other-block {
+  height: 20px;
+}
+
+._block__element {
+  height: 20px;
+}
+
+/* Leading double underscore */
+.__block {
+  height: 20px;
+}
+
+.__other-block {
+  height: 20px;
+}
+
+.__block__element {
+  height: 20px;
+}
+
+/* Trailing underscore */
+.block_ {
+  height: 20px;
+}
+
+.other-block_ {
+  height: 20px;
+}
+
+.block__element_ {
+  height: 20px;
+}
+
+/* Trailing double underscore */
+.block__ {
+  height: 20px;
+}
+
+.other-block__ {
+  height: 20px;
+}
+
+.block__element__ {
+  height: 20px;
+}
+
+/* Wrong order */
+.block--modifier__element {
+  height: 20px;
+}
+
+.block--modifier--modifier__element {
+  height: 20px;
+}
+
+/* Mixed dash and underscore in BEM separator */
+.block-__element {
+  height: 20px;
+}
+
+.other-block-__element {
+  height: 20px;
+}
+
+.block-__other-element {
+  height: 20px;
+}
