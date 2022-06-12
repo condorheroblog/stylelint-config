@@ -1,0 +1,49 @@
+{
+  "name": "@condorhero/stylelint-config",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.1.6",
+  "description": "My Stylelint config presets",
+  "keywords": [
+    "eslint",
+    "Stylelint-config-css",
+    "Stylelint-config-less",
+    "Stylelint-config-scss",
+    "Stylelint-config-sass",
+    "Stylelint-config-preset"
+  ],
+  "license": "MIT",
+  "author": "CondorHero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/stylelint-config.git",
+    "directory": "packages/all"
+  },
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "stylelint:fix": "stylelint . --fix --config=index.js",
+    "stylelint": "stylelint . --config=index.js"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/condorheroblog/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@condorhero/stylelint-config-css": "workspace:^",
+    "@condorhero/stylelint-config-jss": "workspace:^",
+    "@condorhero/stylelint-config-less": "workspace:^",
+    "@condorhero/stylelint-config-scss": "workspace:^"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.0"
+  }
+}
