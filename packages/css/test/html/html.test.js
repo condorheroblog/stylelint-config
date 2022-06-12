@@ -1,6 +1,5 @@
 import { join } from "node:path";
 import stylelint from "stylelint";
-import postcssHtml from "postcss-html";
 import { beforeEach, describe, expect, test } from "vitest";
 
 import basicConfig from "../../";
@@ -16,7 +15,6 @@ describe("flags no warnings in HTML with valid css", () => {
     result = stylelint.lint({
       config,
       files: validHtmlPath,
-      customSyntax: postcssHtml,
     });
   });
 
@@ -36,7 +34,6 @@ describe("flags warnings in HTML with invalid css", () => {
     result = stylelint.lint({
       config,
       files: invalidHtmlPath,
-      customSyntax: postcssHtml,
     });
   });
 

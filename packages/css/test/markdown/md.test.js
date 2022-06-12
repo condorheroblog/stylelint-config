@@ -1,6 +1,5 @@
 import { join } from "node:path";
 import stylelint from "stylelint";
-import postcssMarkdown from "postcss-markdown";
 import { beforeEach, describe, expect, test } from "vitest";
 
 import basicConfig from "../../";
@@ -16,7 +15,6 @@ describe("flags no warnings in Markdown with valid css", () => {
     result = stylelint.lint({
       config,
       files: validMarkdown,
-      customSyntax: postcssMarkdown,
     });
   });
 
@@ -36,7 +34,6 @@ describe("flags warnings in Markdown with invalid css", () => {
     result = stylelint.lint({
       config,
       files: invalidMarkdown,
-      customSyntax: postcssMarkdown,
     });
   });
 
