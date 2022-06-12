@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import stylelint from "stylelint";
 import postcssMarkdown from "postcss-markdown";
 import { beforeEach, describe, expect, test } from "vitest";

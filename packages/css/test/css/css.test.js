@@ -1,5 +1,5 @@
-import fs from "fs";
-import { join } from "path";
+import fs from "node:fs";
+import { join } from "node:path";
 import stylelint from "stylelint";
 import { beforeEach, describe, expect, test } from "vitest";
 
