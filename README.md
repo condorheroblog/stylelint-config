@@ -22,13 +22,71 @@
 - CSS, Sass, Less, JSS...out-of-box.
 - Sorted CSS properties.
 
-## Table of Contents
+## Usage
 
-1. [@condorhero/stylelint-config-css](#condorherostylelint-config-css)
+### Install
 
-### @condorhero/stylelint-config-css
+```bash
+pnpm add -D eslint @condorhero/stylelint-config
+```
+
+### Config `.stylelintrc`
+
+```json
+{
+  "extends": "@condorhero/stylelint-config"
+}
+```
+
+> Because stylelint extensions cannot work like eslint, the default ignore check cannot be inherited automatically. You need to import it manually.
+
+```js
+const { ignoreFiles } = require("@condorhero/stylelint-config");
+
+// Add the ignoreFiles to the default ignore list in stylelint config file(Like `.stylelintrc`)
+module.exports = {
+  ignoreFiles,
+};
+```
+In addition, you can create `.stylelintignore` or add the format file suffix when formatting(ex: `stylelint **/*.{css,html,md}`).
+
+### Add script for package.json
+
+For example:
+
+```json
+{
+  "scripts": {
+    "stylelint": "stylelint .",
+    "stylelint:fix": "stylelint . --fix"
+  }
+}
+```
+
+### Config VS Code auto fix
+
+Create `.vscode/settings.json`
+
+```json
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "files.autoSaveDelay": 500,
+}
+```
+> source: https://github.com/stylelint/vscode-stylelint/issues/35
+
+## Other Stylelint presets
 
 - [@condorhero/stylelint-config-css](./packages/css/README.md)
+- [@condorhero/stylelint-config-jss](./packages/jss/README.md)
+
 ## Contribution Guide
 
 Hey there! We are really excited that you are interested in contributing. This is a general contribution guide. Before submitting your contribution, please make sure to take a moment and read through the following guide:

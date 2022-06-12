@@ -40,7 +40,17 @@ pnpm add -D eslint @condorhero/stylelint-config-jss
 }
 ```
 
-> You don't need `.stylelintignore` normally as it has been provided by the preset.
+> Because stylelint extensions cannot work like eslint, the default ignore check cannot be inherited automatically. You need to import it manually.
+
+```js
+const { ignoreFiles } = require("@condorhero/stylelint-config-jss");
+
+// Add the ignoreFiles to the default ignore list in stylelint config file(Like `.stylelintrc`)
+module.exports = {
+  ignoreFiles,
+};
+```
+In addition, you can create `.stylelintignore` or add the format file suffix when formatting(ex: `stylelint **/*.{css,html,md}`).
 
 ### Add script for package.json
 
