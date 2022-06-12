@@ -72,3 +72,13 @@ describe("flags warnings with invalid css", () => {
     return result.then(data => expect(data.results[0].warnings[0].column).toBe(29));
   });
 });
+
+describe("CSS pieces to be tested", () => {
+  test("valid.css", () => {
+    return expect(validCss).toMatchSnapshot();
+  });
+
+  test("invalid.css", () => {
+    return expect(invalidCss).toMatchSnapshot();
+  });
+});

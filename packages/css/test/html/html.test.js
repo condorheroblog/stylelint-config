@@ -1,12 +1,15 @@
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import stylelint from "stylelint";
 import { beforeEach, describe, expect, test } from "vitest";
 
 import basicConfig from "../../";
-const config = { ...basicConfig, ignoreFiles: [] };
 
+const config = { ...basicConfig, ignoreFiles: [] };
 const validHtmlPath = join(__dirname, "./valid.html");
 const invalidHtmlPath = join(__dirname, "./invalid.html");
+const validHtml = readFileSync(validHtmlPath, "utf-8");
+const invalidHtml = readFileSync(invalidHtmlPath, "utf-8");
 
 describe("flags no warnings in HTML with valid css", () => {
   let result;
@@ -69,5 +72,15 @@ describe("flags warnings in HTML with invalid css", () => {
 
   test("correct column number", () => {
     return result.then(data => expect(data.results[0].warnings[0].column).toBe(37));
+  });
+});
+
+describe("HTML pieces to be tested", () => {
+  test("valid.html", () => {
+    return expect(validHtml).toMatchSnapshot();
+  });
+
+  test("invalid.html", () => {
+    return expect(invalidHtml).toMatchSnapshot();
   });
 });
