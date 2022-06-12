@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
   "workspaces": [
-    "packages/css"
+    "packages/*"
   ],
   "devDependencies": {
     "@condorhero/eslint-config-basic": "^0.1.5",
