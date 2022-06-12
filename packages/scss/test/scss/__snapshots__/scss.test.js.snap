@@ -1,0 +1,35 @@
+// Vitest Snapshot v1
+
+exports[`SCSS pieces to be tested > index.scss 1`] = `
+"$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+$ABC: #ABC;
+
+@function -box-shadow() {
+  @return $-box-shadow or (0 0.5rem 1rem rgba($-black, 0.15));
+}
+
+@mixin configure($black: null, $border-radius: null, $box-shadow: null) {
+  @if $black {
+    $-black: $black !global;
+  }
+
+  @if $border-radius {
+    $-border-radius: $border-radius !global;
+  }
+
+  @if $box-shadow {
+    $-box-shadow: $box-shadow !global;
+  }
+}
+
+@mixin corner-icon($name, $top-or-bottom, $left-or-right) {
+  .icon-#{$name} {
+    position: absolute;
+    background-image: url(\\"/icons/#{$name}.svg\\");
+    #{$top-or-bottom}: 0;
+    #{$left-or-right}: 0;
+  }
+}
+"
+`;
