@@ -1,0 +1,44 @@
+{
+  "name": "@condorhero/stylelint-config-less",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.1.6",
+  "description": "My Stylelint LESS config presets",
+  "keywords": [
+    "eslint",
+    "Stylelint-config-less",
+    "Stylelint-config-preset"
+  ],
+  "license": "MIT",
+  "author": "CondorHero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/stylelint-config.git",
+    "directory": "packages/less"
+  },
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "stylelint:fix": "stylelint . --fix --config=index.js",
+    "stylelint": "stylelint . --config=index.js"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/condorheroblog/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@condorhero/stylelint-config-css": "workspace:^",
+    "postcss-less": "^6.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.0"
+  }
+}

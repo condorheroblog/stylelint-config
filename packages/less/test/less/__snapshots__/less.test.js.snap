@@ -1,0 +1,30 @@
+// Vitest Snapshot v1
+
+exports[`LESS pieces to be tested > index.less 1`] = `
+"@link-color: #428bca;
+
+:root {
+  --color: @link-color;
+}
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#menu a {
+  color: #111;
+  .bordered();
+}
+
+.parent {
+  color: @link-color;
+
+  & .child {
+    width: 22px;
+    height: 33px;
+    color: #abc321;
+  }
+}
+"
+`;
