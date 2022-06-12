@@ -28,6 +28,7 @@ module.exports = {
         // },
       },
     ],
+    "color-hex-case": "upper",
   },
   ignoreFiles: [
     // https://github.com/stylelint/stylelint/blob/2015d0d74d/lib/standalone.js#L23

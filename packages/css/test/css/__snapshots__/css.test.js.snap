@@ -20,7 +20,7 @@ exports[`CSS pieces to be tested > valid.css 1`] = `
   box-sizing: border-box;
   display: block;
   color: var(--brand-red);
-  background: linear-gradient(#fff, rgb(0 0 0 / 80%));
+  background: linear-gradient(#FFF, rgb(0 0 0 / 80%));
 }
 
 .selector-a,
@@ -61,13 +61,13 @@ exports[`CSS pieces to be tested > valid.css 1`] = `
       repeating-linear-gradient(
         -45deg,
         transparent,
-        #fff 25px,
+        #FFF 25px,
         rgb(255 255 255 / 100%) 50px
       );
     box-shadow:
       0 1px 1px #000,
-      0 1px 0 #fff,
-      2px 2px 1px 1px #ccc inset;
+      0 1px 0 #FFF,
+      2px 2px 1px 1px #CCC inset;
     animation: 3s none fade-in;
   }
 

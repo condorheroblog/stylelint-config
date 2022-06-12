@@ -48,8 +48,8 @@ describe("flags warnings in HTML with invalid css", () => {
     return result.then(data => expect(data.errored).toBeTruthy());
   });
 
-  test("flags 11 warning", async() => {
-    return result.then(data => expect(data.results[0].warnings).toHaveLength(11));
+  test("flags 12 warning", async() => {
+    return result.then(data => expect(data.results[0].warnings).toHaveLength(12));
   });
 
   test("correct warning text", () => {

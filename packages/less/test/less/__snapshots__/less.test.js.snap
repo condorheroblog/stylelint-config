@@ -1,7 +1,7 @@
 // Vitest Snapshot v1
 
 exports[`LESS pieces to be tested > index.less 1`] = `
-"@link-color: #428bca;
+"@link-color: #428BCA;
 
 :root {
   --color: @link-color;
@@ -23,7 +23,7 @@ exports[`LESS pieces to be tested > index.less 1`] = `
   & .child {
     width: 22px;
     height: 33px;
-    color: #abc321;
+    color: #ABC321;
   }
 }
 "
