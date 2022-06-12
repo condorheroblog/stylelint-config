@@ -42,7 +42,7 @@ describe("flags warnings with invalid css", () => {
     return result.then(data => expect(data.errored).toBeTruthy());
   });
 
-  test("flags one warning", async() => {
+  test("flags 11 warning", async() => {
     return result.then(data => expect(data.results[0].warnings).toHaveLength(11));
   });
 

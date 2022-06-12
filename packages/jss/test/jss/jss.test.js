@@ -48,7 +48,7 @@ describe("flags warnings in HTML with invalid css", () => {
     return result.then(data => expect(data.errored).toBeTruthy());
   });
 
-  test("flags one warning", () => {
+  test("flags 3 warning", () => {
     return result.then(data => expect(data.results[0].warnings).toHaveLength(3));
   });
 
