@@ -1,0 +1,33 @@
+// Vitest Snapshot v1
+
+exports[`validate file snapshot > index.css 1`] = `
+"div {
+  position:relative;
+}
+"
+`;
+
+exports[`validate file snapshot > index.scss 1`] = `
+"$w10:10px;
+"
+`;
+
+exports[`validate file snapshot > index.tsx 1`] = `
+"import styled from \\"@emotion/styled\\";
+
+const Title = styled.h2\`margin: 0 0 1rem;
+font-size: 1.5rem;
+width: calc(5% - 10em);
+\`;
+
+function Index() {
+  return (
+    <>
+      <Title>Learn React</Title>
+    </>
+  );
+}
+
+export default Index;
+"
+`;
