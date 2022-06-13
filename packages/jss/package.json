@@ -1,6 +1,6 @@
 {
   "name": "@condorhero/stylelint-config-jss",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "packageManager": "pnpm@7.1.6",
   "description": "My Stylelint jss config presets",
   "keywords": [
