@@ -1,0 +1,30 @@
+@value colors: "./colors.css";
+@value primary, secondary from colors;
+
+.base {
+  width: 20px;
+  color: primary;
+  content: "base";
+}
+
+.composed {
+  composes: base;
+}
+
+.composed-with {
+  compose-with: base;
+}
+
+.flexible {
+  composes: flex from "./utils.css";
+  flex-direction: column;
+}
+
+:global(.js) .progressive {
+  display: block;
+}
+
+:export {
+  black: #000;
+  white: #111;
+}

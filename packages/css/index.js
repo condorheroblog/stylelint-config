@@ -2,7 +2,7 @@ module.exports = {
   plugins: [
     "stylelint-selector-bem-pattern",
   ],
-  extends: ["stylelint-config-standard", "stylelint-config-recess-order"],
+  extends: ["stylelint-config-standard", "stylelint-config-recess-order", "stylelint-config-css-modules"],
   overrides: [
     {
       files: ["*.html", "**/*.html", "*.htm", "**/*.htm", "*.xml", "**/*.xml"],
