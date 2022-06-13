@@ -17,9 +17,9 @@
 
 - The(stylelint-config-standard) standard shareable config for Stylelint.
 - stylelint-config-recess-order is Recess-based property sort order for Stylelint.
-- Lint also for HTML, markdown
+- Lint also for HTML, markdown, css-modules, bem, css-in-js.
 - Auto fix for formatting.
-- CSS out-of-box.
+- css-in-js out-of-box.
 - Sorted CSS properties.
 
 > Note: `@stylelint/postcss-css-in-js` package may be abandoned [Deprecate package](https://github.com/stylelint/postcss-css-in-js/issues/225)，I will follow it in real time.
@@ -40,17 +40,7 @@ pnpm add -D eslint @condorhero/stylelint-config-jss
 }
 ```
 
-> Because stylelint extensions cannot work like eslint, the default ignore check cannot be inherited automatically. You need to import it manually.
-
-```js
-const { ignoreFiles } = require("@condorhero/stylelint-config-jss");
-
-// Add the ignoreFiles to the default ignore list in stylelint config file(Like `.stylelintrc`)
-module.exports = {
-  ignoreFiles,
-};
-```
-In addition, you can create `.stylelintignore` or add the format file suffix when formatting(ex: `stylelint **/*.{css,html,md}`).
+> You can use a [`.stylelintignore`](https://stylelint.io/user-guide/ignore-code#files-entirely) file to ignore specific files, Alternatively, you can add an [ignoreFiles property](https://stylelint.io/user-guide/configure#ignorefiles) within your configuration object.**It is recommended to use the CLI command to specify the format file suffix**, For example: `stylelint src/**/*.{css,html,md}`).
 
 ### Add script for package.json
 
@@ -59,8 +49,8 @@ For example:
 ```json
 {
   "scripts": {
-    "stylelint": "stylelint **/*.{css,html,md}",
-    "stylelint:fix": "stylelint **/*.{css,html,md} --fix"
+    "stylelint": "stylelint **/*.{css,html,md,js,ts,jsx,tsx}",
+    "stylelint:fix": "stylelint **/*.{css,html,md,js,ts,jsx,tsx} --fix"
   }
 }
 ```
@@ -113,6 +103,8 @@ taze -r major && taze -w
 After bumpping, we install them, runing build and test to verify nothing breaks before pushing to main.
 
 ### monorepo
+
+![stylelint-config](https://user-images.githubusercontent.com/47056890/173309864-cb19da18-2531-4407-9f07-f17e00616f90.png)
 
 <details>
 <summary>for npm（My backup）</summary>
@@ -176,6 +168,13 @@ Run as if pnpm was started in the root of the [workspace](https://pnpm.io/worksp
 
 ### Commit Convention
 We use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages, which allows the changelog to be auto-generated based on the commits. Please read the guide through if you aren't familiar with it already.
+
+### EditorConfig
+
+EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+
+VS Code need download Plugin - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
+
 ## License
 
 [MIT](https://github.com/condorheroblog/stylelint-config/blob/main/LICENSE)
