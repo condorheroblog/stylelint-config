@@ -36,7 +36,8 @@
   },
   "dependencies": {
     "@condorhero/stylelint-config-css": "workspace:^",
-    "postcss-less": "^6.0.0"
+    "postcss-less": "^6.0.0",
+    "stylelint-config-recommended-less": "^1.0.4"
   },
   "devDependencies": {
     "stylelint": "^14.9.0"
