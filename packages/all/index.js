@@ -5,6 +5,7 @@ module.exports = {
     "@condorhero/stylelint-config-css",
     "@condorhero/stylelint-config-scss",
     "@condorhero/stylelint-config-jss",
+    "@condorhero/stylelint-config-vue",
   ],
   ignoreFiles: [
     ...stylelintCSS.ignoreFiles,

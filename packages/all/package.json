@@ -9,6 +9,7 @@
     "Stylelint-config-less",
     "Stylelint-config-scss",
     "Stylelint-config-sass",
+    "Stylelint-config-vue",
     "Stylelint-config-preset"
   ],
   "license": "MIT",
@@ -41,7 +42,8 @@
     "@condorhero/stylelint-config-css": "workspace:^",
     "@condorhero/stylelint-config-jss": "workspace:^",
     "@condorhero/stylelint-config-less": "workspace:^",
-    "@condorhero/stylelint-config-scss": "workspace:^"
+    "@condorhero/stylelint-config-scss": "workspace:^",
+    "@condorhero/stylelint-config-vue": "workspace:^"
   },
   "devDependencies": {
     "stylelint": "^14.9.0"

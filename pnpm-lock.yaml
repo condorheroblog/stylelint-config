@@ -24,12 +24,14 @@ importers:
       '@condorhero/stylelint-config-jss': workspace:^
       '@condorhero/stylelint-config-less': workspace:^
       '@condorhero/stylelint-config-scss': workspace:^
+      '@condorhero/stylelint-config-vue': workspace:^1.0.0
       stylelint: ^14.9.0
     dependencies:
       '@condorhero/stylelint-config-css': link:../css
       '@condorhero/stylelint-config-jss': link:../jss
       '@condorhero/stylelint-config-less': link:../less
       '@condorhero/stylelint-config-scss': link:../scss
+      '@condorhero/stylelint-config-vue': link:../vue
     devDependencies:
       stylelint: registry.npmmirror.com/stylelint/14.9.1
 

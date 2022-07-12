@@ -9,6 +9,7 @@ const config = { ...basicConfig, ignoreFiles: [] };
 const validateCssPath = join(__dirname, "./index.css");
 const validateScssPath = join(__dirname, "./index.scss");
 const validateJssPath = join(__dirname, "./index.tsx");
+const validateVuePath = join(__dirname, "./index.vue");
 const validateCss = readFileSync(validateCssPath, "utf-8");
 const validateScss = readFileSync(validateScssPath, "utf-8");
 const validateJss = readFileSync(validateJssPath, "utf-8");
@@ -81,6 +82,26 @@ describe("validate css-in-js", () => {
   });
 });
 
+describe("validate vue", () => {
+  let result;
+
+  beforeEach(() => {
+    result = stylelint.lint({
+      config,
+      files: validateVuePath,
+      configBasedir: __dirname,
+    });
+  });
+
+  test("vue did error", () => {
+    return result.then(data => expect(data.errored).toBeTruthy());
+  });
+
+  test("vue had 1 warning", () => {
+    return result.then(data => expect(data.results[0].warnings).toHaveLength(2));
+  });
+});
+
 describe("validate file snapshot", () => {
   test("index.css", () => {
     return expect(validateCss).toMatchSnapshot();
@@ -92,5 +113,9 @@ describe("validate file snapshot", () => {
 
   test("index.tsx", () => {
     return expect(validateJss).toMatchSnapshot();
+  });
+
+  test("index.vue", () => {
+    return expect(validateVuePath).toMatchSnapshot();
   });
 });
