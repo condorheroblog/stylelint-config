@@ -33,10 +33,10 @@
   ],
   "devDependencies": {
     "@condorhero/eslint-config-basic": "^0.1.5",
-    "bumpp": "^7.1.1",
-    "eslint": "^8.17.0",
+    "bumpp": "^7.2.0",
+    "eslint": "^8.19.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.1",
-    "vitest": "^0.14.1"
+    "lint-staged": "^13.0.3",
+    "vitest": "^0.14.2"
   }
 }
