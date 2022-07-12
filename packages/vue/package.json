@@ -1,0 +1,45 @@
+{
+  "name": "@condorhero/stylelint-config-vue",
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.1.6",
+  "description": "My Stylelint vue config presets",
+  "keywords": [
+    "eslint",
+    "Stylelint-config-vue",
+    "Stylelint-config-preset"
+  ],
+  "license": "MIT",
+  "author": "CondorHero",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/stylelint-config.git",
+    "directory": "packages/vue"
+  },
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "stylelint:fix": "stylelint . --fix --cache --cache-location node_modules/.cache/stylelint/ --config=index.js",
+    "stylelint": "stylelint . --config=index.js"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/condorheroblog/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/stylelint-config#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@condorhero/stylelint-config-css": "workspace:^",
+    "postcss-html": "^1.4.1",
+    "stylelint-config-recommended-vue": "^1.4.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.0"
+  }
+}

@@ -1,0 +1,18 @@
+// Vitest Snapshot v1
+
+exports[`Vue pieces to be tested > invalid.vue 1`] = `
+"<style lang=\\"scss\\">
+//comment
+</style>
+<style>
+:global(.foo),
+::v-deep(.foo),
+::v-slotted(.foo),
+::v-global(.foo),
+:deep(.foo),
+:slotted(.foo) {
+    color: red;
+}
+</style>
+"
+`;
