@@ -13,6 +13,7 @@ const validateVuePath = join(__dirname, "./index.vue");
 const validateCss = readFileSync(validateCssPath, "utf-8");
 const validateScss = readFileSync(validateScssPath, "utf-8");
 const validateJss = readFileSync(validateJssPath, "utf-8");
+const validateVue = readFileSync(validateVuePath, "utf-8");
 
 describe("validate CSS", () => {
   let result;
@@ -116,6 +117,6 @@ describe("validate file snapshot", () => {
   });
 
   test("index.vue", () => {
-    return expect(validateVuePath).toMatchSnapshot();
+    return expect(validateVue).toMatchSnapshot();
   });
 });
