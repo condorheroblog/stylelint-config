@@ -80,6 +80,7 @@ Create `.vscode/settings.json`
 - [@condorhero/stylelint-config-jss](./packages/jss/README.md)
 - [@condorhero/stylelint-config-less](./packages/less/README.md)
 - [@condorhero/stylelint-config-scss](./packages/scss/README.md)
+- [@condorhero/stylelint-config-vue](./packages/vue/README.md)
 
 ## Contribution Guide
 

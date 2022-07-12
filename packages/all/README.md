@@ -76,10 +76,11 @@ Create `.vscode/settings.json`
 
 ## Other Stylelint presets
 
-- [@condorhero/stylelint-config-css](./packages/css/README.md)
-- [@condorhero/stylelint-config-jss](./packages/jss/README.md)
-- [@condorhero/stylelint-config-less](./packages/less/README.md)
-- [@condorhero/stylelint-config-scss](./packages/scss/README.md)
+- [@condorhero/stylelint-config-css](../css/README.md)
+- [@condorhero/stylelint-config-jss](../jss/README.md)
+- [@condorhero/stylelint-config-less](../less/README.md)
+- [@condorhero/stylelint-config-scss](../scss/README.md)
+- [@condorhero/stylelint-config-vue](../vue/README.md)
 
 ## Contribution Guide
 
