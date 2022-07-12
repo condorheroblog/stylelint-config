@@ -1,6 +1,6 @@
 {
   "name": "@condorhero/stylelint-config-css",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "packageManager": "pnpm@7.1.6",
   "description": "My Stylelint CSS config presets",
   "keywords": [
