@@ -6,11 +6,11 @@
 
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config" target="__blank">
-        <img src="https://img.shields.io/npm/v/@condorhero/stylelint-config?color=a1b858&label=" alt="NPM version">
+    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config-scss" target="__blank">
+        <img src="https://img.shields.io/npm/v/@condorhero/stylelint-config-scss?color=a1b858&label=" alt="NPM version">
     </a>
-    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config" target="__blank">
-        <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@condorhero/stylelint-config?color=50a36f&label=">
+    <a href="https://www.npmjs.com/package/@condorhero/stylelint-config-scss" target="__blank">
+        <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@condorhero/stylelint-config-scss?color=50a36f&label=">
     </a>
     <br />
 </p>
